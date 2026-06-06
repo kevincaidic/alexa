@@ -190,28 +190,22 @@ export default function HeroSection() {
           {/* Main Portrait Frame with Luxury Offset Polygons */}
           <div className="relative w-full max-w-[360px] aspect-[3/4] z-10 group" id="portrait-frame">
             
-            {/* Outer offset ambient frame coordinates */}
-            <div className="absolute inset-x-0 inset-y-0 border border-white/10 -translate-x-4 translate-y-4 rounded-2xl -z-10 group-hover:-translate-x-2 group-hover:translate-y-2 transition-transform duration-500" />
-            <div className="absolute inset-x-0 inset-y-0 border border-accent-purple/20 -translate-x-8 translate-y-8 rounded-2xl -z-20 scale-[0.98] group-hover:-translate-x-4 group-hover:translate-y-4 transition-transform duration-700" />
+            {/* Outer offset ambient frame coordinates - CIRCULAR */}
+            <div className="absolute inset-x-0 inset-y-0 border border-white/10 -translate-x-4 translate-y-4 rounded-full -z-10 group-hover:-translate-x-2 group-hover:translate-y-2 transition-transform duration-500" />
+            <div className="absolute inset-x-0 inset-y-0 border border-accent-purple/20 -translate-x-8 translate-y-8 rounded-full -z-20 scale-[0.98] group-hover:-translate-x-4 group-hover:translate-y-4 transition-transform duration-700" />
 
             {/* Glowing spotlight background of image */}
-            <div className="absolute -inset-1 bg-gradient-to-tr from-accent-purple/25 via-accent-teal/25 to-transparent rounded-2xl blur-xl opacity-80 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="absolute -inset-1 bg-gradient-to-tr from-accent-purple/25 via-accent-teal/25 to-transparent rounded-full blur-xl opacity-80 group-hover:opacity-100 transition-opacity duration-500" />
 
-            {/* Custom Interactive Portrait Image with referrerPolicy */}
-            <div className="relative w-full h-full rounded-2xl overflow-hidden glass-panel border border-white/10 shadow-2xl">
+            {/* Custom Interactive Portrait Image - CIRCULAR */}
+            <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-white/20 shadow-2xl">
               <img
                 src={PORTFOLIO_OWNER.portraitUrl}
                 alt={PORTFOLIO_OWNER.name}
                 referrerPolicy="no-referrer"
-                className="w-full h-full object-cover scale-100 group-hover:scale-[1.03] transition-all duration-700 select-none grayscale group-hover:grayscale-0"
+                className="w-full h-full object-cover scale-100 group-hover:scale-110 transition-all duration-700 select-none"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-charcoal-pure/90 via-transparent to-transparent opacity-80" />
-              
-              {/* Overlay Metadata Stamp */}
-              <div className="absolute bottom-6 left-6 right-6 flex items-center justify-between font-mono text-[10px] text-white/50 bg-black/60 backdrop-blur-md px-3.5 py-2.5 rounded-lg border border-white/5">
-                <span>PORTRAIT STAMP: M.A.C.</span>
-                <span className="text-accent-teal">VERIFIED DESIGNER</span>
-              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-charcoal-pure/60 via-transparent to-transparent opacity-60" />
             </div>
           </div>
 
