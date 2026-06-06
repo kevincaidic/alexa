@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-charcoal-pure: #050505;
+  --color-charcoal-deep: #0A0A0A;
+  --color-charcoal-mid: #101010;
+  --color-charcoal-light: #161616;
+  
+  --color-accent-teal: #F27D26;
+  --color-accent-purple: #3B82F6;
+  --color-accent-emerald: #22C55E;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--color-charcoal-pure);
+    color: #F5F5F5;
+    font-family: var(--font-sans);
+  }
+  
+  /* Scrollbar Customization */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #050505;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #161616;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #222222;
+  }
+
+  ::selection {
+    background-color: var(--color-accent-teal);
+    color: #050505;
+  }
+}
+
+/* Custom visual utilities for Sophisticated Dark design theme */
+.text-display {
+  font-family: 'Outfit', 'Space Grotesk', 'Helvetica Neue', Arial, sans-serif;
+  line-height: 0.85;
+  letter-spacing: -0.04em;
+  font-weight: 700;
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-heavy {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.border-glow {
+  box-shadow: 0 0 15px rgba(242, 125, 38, 0.12);
+}
+
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.accent-glow-orange {
+  background: radial-gradient(circle at 50% 50%, rgba(242, 125, 38, 0.15) 0%, transparent 70%);
+}
+
+.accent-glow-blue {
+  background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.12) 0%, transparent 70%);
+}
+
+.noise {
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Atmospheric Ambient Glowing Orbs */
+.glow-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(120px);
+  opacity: 0.35;
+  pointer-events: none;
+  z-index: 0;
+  transition: all 1s ease-in-out;
+}
+
+/* Utility to mask edges nicely */
+.mask-radial {
+  mask-image: radial-gradient(circle at center, black 60%, transparent 100%);
+  -webkit-mask-image: radial-gradient(circle at center, black 60%, transparent 100%);
+}
+
+/* Custom horizontal scroll bar hiders */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Backing layout locking configurations for active modal popups */
+body.modal-open {
+  overflow: hidden;
+}
+
+body.modal-open #navbar-header {
+  z-index: 30; /* lowers navbar beneath fixed modal window */
+}
