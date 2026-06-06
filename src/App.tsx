@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import FeaturedProjectsSection from "./components/FeaturedProjectsSection";
-import DesignProcessSection from "./components/DesignProcessSection";
 import AboutSection from "./components/AboutSection";
 import ExperienceSection from "./components/ExperienceSection";
 import CertificatesSection from "./components/CertificatesSection";
@@ -19,7 +18,6 @@ export default function App() {
       const sections = [
         "hero",
         "projects",
-        "process",
         "about",
         "experience",
         "certificates",
@@ -64,9 +62,6 @@ export default function App() {
 
         {/* Featured Projects with storytelling case study portals */}
         <FeaturedProjectsSection />
-
-        {/* Design Process interactive blueprint stages */}
-        <DesignProcessSection />
 
         {/* Narrative Biography about Alexa Cagaanan */}
         <AboutSection />

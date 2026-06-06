@@ -8,7 +8,7 @@ export const PORTFOLIO_OWNER = {
   bioParagraph1: "I am a detail-obsessed UI/UX Designer specialized in creating high-fidelity visual ecosystems, interactive digital sculptures, and custom luxury web portals. Focusing heavily on modern editorial typography, tactile grid systems, and subtle spatial micro-animations, I design products that don't just solve problems—they tell compelling visual stories.",
   bioParagraph2: "Based in Asia, I collaborate globally with deep-tech startups and premium luxury brands. My philosophy is rooted in architectural design honesty: stripping away unneeded visual noise to reveal clean layout structures wrapped in ambient glowing contrast.",
   portraitUrl: "/Profile/Profile.png",
-  email: "cagaanan.alexa@design.studio",
+  email: "cagaanan.methushielaalexa@dnsc.edu.ph",
   socials: [
     { name: "Behance", url: "https://behance.net" },
     { name: "Dribbble", url: "https://dribbble.com" },
