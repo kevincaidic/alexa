@@ -187,25 +187,25 @@ export default function HeroSection() {
           className="lg:col-span-5 relative flex items-center justify-center pointer-events-auto"
           id="hero-presentation-visual"
         >
-          {/* Main Portrait Frame with Luxury Offset Polygons */}
-          <div className="relative w-full max-w-[360px] aspect-[3/4] z-10 group" id="portrait-frame">
+          {/* Main Portrait Frame - PERFECT CIRCLE */}
+          <div className="relative w-full max-w-[360px] aspect-square z-10 group" id="portrait-frame">
             
             {/* Outer offset ambient frame coordinates - CIRCULAR */}
-            <div className="absolute inset-x-0 inset-y-0 border border-white/10 -translate-x-4 translate-y-4 rounded-full -z-10 group-hover:-translate-x-2 group-hover:translate-y-2 transition-transform duration-500" />
-            <div className="absolute inset-x-0 inset-y-0 border border-accent-purple/20 -translate-x-8 translate-y-8 rounded-full -z-20 scale-[0.98] group-hover:-translate-x-4 group-hover:translate-y-4 transition-transform duration-700" />
+            <div className="absolute inset-0 border border-white/10 -translate-x-4 translate-y-4 rounded-full -z-10 group-hover:-translate-x-2 group-hover:translate-y-2 transition-transform duration-500" />
+            <div className="absolute inset-0 border border-accent-purple/20 -translate-x-8 translate-y-8 rounded-full -z-20 scale-[0.98] group-hover:-translate-x-4 group-hover:translate-y-4 transition-transform duration-700" />
 
             {/* Glowing spotlight background of image */}
             <div className="absolute -inset-1 bg-gradient-to-tr from-accent-purple/25 via-accent-teal/25 to-transparent rounded-full blur-xl opacity-80 group-hover:opacity-100 transition-opacity duration-500" />
 
-            {/* Custom Interactive Portrait Image - CIRCULAR */}
-            <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-white/20 shadow-2xl">
+            {/* Custom Interactive Portrait Image - CIRCULAR with proper fit */}
+            <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-white/20 shadow-2xl bg-charcoal-mid">
               <img
                 src={PORTFOLIO_OWNER.portraitUrl}
                 alt={PORTFOLIO_OWNER.name}
                 referrerPolicy="no-referrer"
-                className="w-full h-full object-cover scale-100 group-hover:scale-110 transition-all duration-700 select-none"
+                className="w-full h-full object-cover object-center scale-100 group-hover:scale-105 transition-all duration-700 select-none"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-charcoal-pure/60 via-transparent to-transparent opacity-60" />
+              <div className="absolute inset-0 bg-gradient-to-t from-charcoal-pure/40 via-transparent to-transparent opacity-60" />
             </div>
           </div>
 
