@@ -40,7 +40,6 @@ export default function Navbar({ activeSection }: NavbarProps) {
 
   const navItems = [
     { name: "Projects", href: "#projects" },
-    { name: "Process", href: "#process" },
     { name: "Experience", href: "#experience" },
     { name: "Certificates", href: "#certificates" },
     { name: "Contact", href: "#contact" },

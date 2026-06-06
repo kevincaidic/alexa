@@ -71,11 +71,11 @@ export default function AboutSection() {
             {/* Grid statistics highlights */}
             <div className="grid grid-cols-2 gap-4 pt-4" id="about-stats-grid">
               <div className="bg-white/[0.01] border border-white/5 p-4 rounded-xl">
-                <span className="font-display font-bold text-2xl text-accent-teal block">5+ Years</span>
+                <span className="font-display font-bold text-2xl text-accent-teal block">4 Years</span>
                 <span className="font-mono text-[9px] text-white/40 tracking-wider uppercase">Craft Excellence</span>
               </div>
               <div className="bg-white/[0.01] border border-white/5 p-4 rounded-xl">
-                <span className="font-display font-bold text-2xl text-accent-purple block">32+ Projects</span>
+                <span className="font-display font-bold text-2xl text-accent-purple block">6 Projects</span>
                 <span className="font-mono text-[9px] text-white/40 tracking-wider uppercase">Vetted Systems</span>
               </div>
             </div>

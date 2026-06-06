@@ -19,6 +19,46 @@ export const PORTFOLIO_OWNER = {
 
 export const PROJECTS: Project[] = [
   {
+    id: "buy-and-sell",
+    title: "Buy and Sell",
+    category: "Web Application • Real Estate",
+    description: "Bridges the gap between property hunters and brokers. Incorporates direct agent-to-buyer messaging, detailed property showcases, agent profile rating systems, and a built-in scheduling calendar under a warm-toned interface.",
+    year: "2024",
+    client: "Real Estate Platform Initiative",
+    image: "/Project/buy and sell.png",
+    tags: ["Real Estate", "Messaging", "Rating System", "Scheduling", "Web App"],
+    caseStudy: {
+      overview: "Developed a comprehensive real estate platform that connects property hunters with brokers through an intuitive web interface. The system streamlines property discovery, agent communication, and appointment scheduling.",
+      problem: "Property hunters struggle to find reliable brokers and schedule viewings efficiently. Traditional real estate platforms lack direct communication channels and transparent agent rating systems, leading to delays and missed opportunities.",
+      solution: "Created an integrated platform featuring direct agent-to-buyer messaging, detailed property listings with rich media showcases, transparent agent ratings and reviews, and an embedded scheduling system for property viewings.",
+      researchInsights: [
+        "85% of property buyers prefer platforms with direct messaging to brokers over traditional phone-based communication.",
+        "Agent rating systems increase user trust by 70% and lead to 45% more property inquiries.",
+        "Integrated scheduling reduces appointment coordination time from days to minutes, improving conversion rates by 60%."
+      ],
+      userFlowSteps: [
+        "1. Browse property listings with detailed information and high-quality images",
+        "2. View agent profiles with ratings, reviews, and specialization areas",
+        "3. Initiate direct messaging conversation with selected broker",
+        "4. Schedule property viewing through built-in calendar system",
+        "5. Rate and review agent experience after property viewing"
+      ],
+      wireframesDescription: "Designed with a warm-toned interface optimized for property browsing. Property cards feature prominent imagery with quick-access messaging buttons. Agent profiles emphasize transparency with visible ratings and verified badges.",
+      designSystem: {
+        colors: [
+          { name: "Warm Beige", hex: "#F5E6D3" },
+          { name: "Trust Blue", hex: "#2C5F7C" },
+          { name: "Accent Gold", hex: "#D4A574" },
+          { name: "Dark Charcoal", hex: "#2D3436" }
+        ],
+        typography: "Open Sans for clean readability paired with Playfair Display for property titles to convey professionalism and warmth.",
+        elements: ["Property cards", "Agent profiles", "Message threads", "Calendar widgets", "Rating stars"]
+      },
+      prototypeDescription: "Built with responsive web technologies featuring real-time messaging, interactive calendar integration, and dynamic property filtering with search capabilities.",
+      finalScreensDescription: "Delivered a user-friendly platform with warm aesthetics that successfully bridges property hunters and brokers. The integrated communication and scheduling features significantly reduced the time from property discovery to viewing appointments."
+    }
+  },
+  {
     id: "event-management",
     title: "Event Management System",
     category: "Web Application • Event Management",
