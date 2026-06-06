@@ -5,7 +5,6 @@ import FeaturedProjectsSection from "./components/FeaturedProjectsSection";
 import AboutSection from "./components/AboutSection";
 import ExperienceSection from "./components/ExperienceSection";
 import CertificatesSection from "./components/CertificatesSection";
-import ExplorationsSection from "./components/ExplorationsSection";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
 
@@ -21,7 +20,6 @@ export default function App() {
         "about",
         "experience",
         "certificates",
-        "explorations",
         "contact"
       ];
       const scrollPos = window.scrollY + window.innerHeight / 3;
@@ -71,9 +69,6 @@ export default function App() {
 
         {/* Verified credentials & certificate modal popups */}
         <CertificatesSection />
-
-        {/* Experimental conceptual playground filter grids */}
-        <ExplorationsSection />
 
         {/* Contact dispatch form portal */}
         <ContactSection />
