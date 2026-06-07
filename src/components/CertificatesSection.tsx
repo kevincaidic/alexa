@@ -62,9 +62,9 @@ export default function CertificatesSection() {
   };
 
   return (
-    <section className="relative py-24 md:py-32 px-6 md:px-12 bg-charcoal-pure overflow-hidden" id="certificates">
+    <section className="relative py-24 md:py-32 px-6 md:px-12 bg-[#F5EDE4] overflow-hidden" id="certificates">
       {/* Decorative spotlight grids */}
-      <div className="absolute top-1/4 right-[-10%] w-[450px] h-[450px] bg-accent-purple/[0.02] rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute top-1/4 right-[-10%] w-[450px] h-[450px] bg-[#B47B84]/[0.05] rounded-full blur-[100px] pointer-events-none" />
 
       {/* Scroll reveal wrapper */}
       <motion.div
@@ -75,26 +75,26 @@ export default function CertificatesSection() {
       >
         {/* Styled Section Header & Navigation controls */}
         <div className="max-w-7xl mx-auto mb-12 relative z-10 flex flex-col md:flex-row md:items-end md:justify-between gap-6" id="certs-header">
-          <div className="flex border-l-2 border-accent-teal pl-4 flex-col">
-            <span className="font-mono text-xs text-accent-teal uppercase tracking-[0.25em] mb-2">Qualifications</span>
-            <h2 className="font-display font-extrabold text-3xl md:text-5xl text-white tracking-tight">
+          <div className="flex border-l-2 border-[#B47B84] pl-4 flex-col">
+            <span className="font-mono text-xs text-[#B47B84] uppercase tracking-[0.25em] mb-2">Qualifications</span>
+            <h2 className="font-display font-extrabold text-3xl md:text-5xl text-[#1A1A1A] tracking-tight">
               Certificates & Vetting
             </h2>
-            <p className="text-white/40 text-xs font-mono font-light mt-1">SWIPE OR USE BUTTONS TO NAVIGATE CREDENTIALS</p>
+            <p className="text-[#6B6B6B] text-xs font-mono font-light mt-1">SWIPE OR USE BUTTONS TO NAVIGATE CREDENTIALS</p>
           </div>
 
           {/* Side Slider Navigation Buttons */}
           <div className="flex gap-3">
             <button
               onClick={() => handleScroll("left")}
-              className="w-12 h-12 rounded-full border border-white/10 hover:border-accent-teal flex items-center justify-center bg-[#050505]/60 hover:bg-accent-teal hover:text-charcoal-pure text-white transition-all duration-300 cursor-pointer animate-none"
+              className="w-12 h-12 rounded-full border border-[#B47B84]/20 hover:border-[#B47B84] flex items-center justify-center bg-white/60 hover:bg-[#B47B84] hover:text-white text-[#1A1A1A] transition-all duration-300 cursor-pointer animate-none"
               title="Scroll Left"
             >
               <ArrowLeft className="w-5 h-5" />
             </button>
             <button
               onClick={() => handleScroll("right")}
-              className="w-12 h-12 rounded-full border border-white/10 hover:border-accent-teal flex items-center justify-center bg-[#050505]/60 hover:bg-accent-teal hover:text-charcoal-pure text-white transition-all duration-300 cursor-pointer animate-none"
+              className="w-12 h-12 rounded-full border border-[#B47B84]/20 hover:border-[#B47B84] flex items-center justify-center bg-white/60 hover:bg-[#B47B84] hover:text-white text-[#1A1A1A] transition-all duration-300 cursor-pointer animate-none"
               title="Scroll Right"
             >
               <ArrowRight className="w-5 h-5" />
@@ -118,11 +118,11 @@ export default function CertificatesSection() {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.8, ease: "easeOut" }}
               onClick={() => setSelectedCert(cert)}
-              className="w-[380px] shrink-0 snap-center bg-charcoal-mid/60 border border-white/10 hover:border-accent-teal/50 transition-all rounded-2xl overflow-hidden flex flex-col cursor-pointer group"
+              className="w-[380px] shrink-0 snap-center bg-white/60 border border-[#B47B84]/15 hover:border-[#B47B84]/40 transition-all rounded-2xl overflow-hidden flex flex-col cursor-pointer group"
               id={`cert-panel-${cert.id}`}
             >
               {/* Certificate Image - Fixed Height */}
-              <div className="relative h-[280px] bg-charcoal-pure overflow-hidden">
+              <div className="relative h-[280px] bg-white overflow-hidden">
                 <img
                   src={cert.imageUrl}
                   alt={cert.title}
@@ -131,14 +131,14 @@ export default function CertificatesSection() {
                 />
                 
                 {/* Date Badge */}
-                <div className="absolute top-4 left-4 bg-black/80 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/10">
-                  <span className="font-mono text-xs text-accent-teal">{cert.date}</span>
+                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-lg border border-[#B47B84]/20">
+                  <span className="font-mono text-xs text-[#B47B84]">{cert.date}</span>
                 </div>
 
                 {/* View Overlay on Hover */}
-                <div className="absolute inset-0 bg-charcoal-pure/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <div className="flex items-center gap-2 bg-accent-teal/20 px-4 py-2 rounded-full backdrop-blur-sm border border-accent-teal/50 text-sm font-display font-bold uppercase tracking-wider text-white">
-                    <Eye className="w-4 h-4 text-accent-teal" />
+                <div className="absolute inset-0 bg-white/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <div className="flex items-center gap-2 bg-[#B47B84]/20 px-4 py-2 rounded-full backdrop-blur-sm border border-[#B47B84]/50 text-sm font-display font-bold uppercase tracking-wider text-[#1A1A1A]">
+                    <Eye className="w-4 h-4 text-[#B47B84]" />
                     View Details
                   </div>
                 </div>
@@ -148,29 +148,29 @@ export default function CertificatesSection() {
               <div className="p-6 flex flex-col flex-1">
                 {/* Credential ID */}
                 <div className="mb-3">
-                  <span className="font-mono text-[10px] text-white/40 uppercase tracking-widest">
+                  <span className="font-mono text-[10px] text-[#6B6B6B] uppercase tracking-widest">
                     {cert.credentialId}
                   </span>
                 </div>
 
                 {/* Title - Fixed Height */}
-                <h3 className="font-display font-bold text-xl text-white tracking-tight mb-3 line-clamp-2 min-h-[3.5rem] group-hover:text-accent-teal transition-colors">
+                <h3 className="font-display font-bold text-xl text-[#1A1A1A] tracking-tight mb-3 line-clamp-2 min-h-[3.5rem] group-hover:text-[#B47B84] transition-colors">
                   {cert.title}
                 </h3>
 
                 {/* Issuer - Fixed Height */}
-                <p className="text-white/60 text-sm leading-relaxed mb-4 line-clamp-2 min-h-[3rem]">
+                <p className="text-[#3D3D3D] text-sm leading-relaxed mb-4 line-clamp-2 min-h-[3rem]">
                   {cert.issuer}
                 </p>
 
                 {/* Status Badge */}
-                <div className="mt-auto pt-4 border-t border-white/10">
+                <div className="mt-auto pt-4 border-t border-[#B47B84]/10">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2">
-                      <ShieldCheck className="w-4 h-4 text-accent-emerald" />
-                      <span className="text-xs font-mono text-accent-emerald uppercase tracking-wider">Verified</span>
+                      <ShieldCheck className="w-4 h-4 text-[#B47B84]" />
+                      <span className="text-xs font-mono text-[#B47B84] uppercase tracking-wider">Verified</span>
                     </div>
-                    <Award className="w-5 h-5 text-accent-teal/50 group-hover:text-accent-teal transition-colors" />
+                    <Award className="w-5 h-5 text-[#B47B84]/40 group-hover:text-[#B47B84] transition-colors" />
                   </div>
                 </div>
               </div>
@@ -180,15 +180,15 @@ export default function CertificatesSection() {
 
         {/* Elegant Scroll Indicator Track Line */}
         <div className="max-w-7xl mx-auto mt-6 flex flex-col sm:flex-row items-center justify-between gap-4 pointer-events-none relative z-10">
-          <div className="w-full sm:max-w-[240px] h-[3px] bg-white/10 rounded-full overflow-hidden">
+          <div className="w-full sm:max-w-[240px] h-[3px] bg-[#B47B84]/15 rounded-full overflow-hidden">
             <div 
-              className="h-full bg-accent-teal transition-all duration-300 rounded-full shadow-[0_0_8px_rgba(242,125,38,0.5)]" 
+              className="h-full bg-[#B47B84] transition-all duration-300 rounded-full shadow-[0_0_8px_rgba(180,123,132,0.4)]" 
               style={{ width: `${Math.max(8, scrollProgress)}%` }}
             />
           </div>
-          <div className="text-[10px] font-mono text-white/30 uppercase tracking-[0.2em] flex items-center gap-2">
+          <div className="text-[10px] font-mono text-[#6B6B6B] uppercase tracking-[0.2em] flex items-center gap-2">
             <span>DRAG TRACKPAD OR SWIPE OR USE NAV</span>
-            <span className="w-1.5 h-1.5 rounded-full bg-accent-teal animate-pulse"></span>
+            <span className="w-1.5 h-1.5 rounded-full bg-[#B47B84] animate-pulse"></span>
           </div>
         </div>
       </motion.div>

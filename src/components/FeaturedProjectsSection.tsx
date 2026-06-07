@@ -49,9 +49,9 @@ export default function FeaturedProjectsSection() {
   }, []);
 
   return (
-    <section className="relative py-24 md:py-32 px-6 md:px-12 bg-charcoal-pure overflow-hidden" id="projects">
+    <section className="relative py-24 md:py-32 px-6 md:px-12 bg-[#F5EDE4] overflow-hidden" id="projects">
       {/* Glow highlight anchors */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[500px] bg-accent-purple/5 rounded-full blur-[160px] pointer-events-none" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[500px] bg-[#B47B84]/8 rounded-full blur-[160px] pointer-events-none" />
 
       {/* Scroll reveal wrapper */}
       <motion.div
@@ -62,25 +62,25 @@ export default function FeaturedProjectsSection() {
       >
         {/* Structured Section Heading & Navigation controls */}
         <div className="max-w-7xl mx-auto mb-12 relative z-10 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
-          <div className="flex border-l-2 border-accent-teal pl-4 flex-col">
-            <span className="font-mono text-xs text-accent-teal uppercase tracking-[0.25em] mb-2">Featured Launches</span>
-            <h2 className="font-display font-extrabold text-3xl md:text-5xl text-white tracking-tight">
+          <div className="flex border-l-2 border-[#B47B84] pl-4 flex-col">
+            <span className="font-mono text-xs text-[#B47B84] uppercase tracking-[0.25em] mb-2">Featured Launches</span>
+            <h2 className="font-display font-extrabold text-3xl md:text-5xl text-[#1A1A1A] tracking-tight">
               Immersive Project Catalog
             </h2>
-            <p className="text-white/40 text-xs font-mono font-light mt-1">SWIPE OR USE BUTTONS TO NAVIGATE CASE STUDIES</p>
+            <p className="text-[#6B6B6B] text-xs font-mono font-light mt-1">SWIPE OR USE BUTTONS TO NAVIGATE CASE STUDIES</p>
           </div>
 
           {/* Side Slider Navigation Buttons */}
           <div className="flex gap-3">
             <button
               onClick={() => handleScroll("left")}
-              className="w-12 h-12 rounded-full border border-white/10 hover:border-accent-teal flex items-center justify-center bg-[#050505]/60 hover:bg-accent-teal hover:text-charcoal-pure text-white transition-all duration-300 cursor-pointer"
+              className="w-12 h-12 rounded-full border border-[#B47B84]/20 hover:border-[#B47B84] flex items-center justify-center bg-white/60 hover:bg-[#B47B84] hover:text-white text-[#1A1A1A] transition-all duration-300 cursor-pointer"
             >
               <ArrowLeft className="w-5 h-5" />
             </button>
             <button
               onClick={() => handleScroll("right")}
-              className="w-12 h-12 rounded-full border border-white/10 hover:border-accent-teal flex items-center justify-center bg-[#050505]/60 hover:bg-accent-teal hover:text-charcoal-pure text-white transition-all duration-300 cursor-pointer"
+              className="w-12 h-12 rounded-full border border-[#B47B84]/20 hover:border-[#B47B84] flex items-center justify-center bg-white/60 hover:bg-[#B47B84] hover:text-white text-[#1A1A1A] transition-all duration-300 cursor-pointer"
             >
               <ArrowRight className="w-5 h-5" />
             </button>
@@ -101,10 +101,10 @@ export default function FeaturedProjectsSection() {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.8, ease: "easeOut" }}
               key={project.id}
-              className="w-[380px] shrink-0 snap-center bg-charcoal-mid/60 border border-white/10 hover:border-accent-teal/50 transition-all rounded-2xl overflow-hidden flex flex-col"
+              className="w-[380px] shrink-0 snap-center bg-white/60 border border-[#B47B84]/15 hover:border-[#B47B84]/40 transition-all rounded-2xl overflow-hidden flex flex-col"
             >
               {/* Image Container - Fixed Height */}
-              <div className="relative h-[280px] bg-charcoal-pure overflow-hidden">
+              <div className="relative h-[280px] bg-white overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
@@ -113,8 +113,8 @@ export default function FeaturedProjectsSection() {
                 />
                 
                 {/* Year Badge */}
-                <div className="absolute top-4 left-4 bg-black/80 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/10">
-                  <span className="font-mono text-xs text-accent-teal">{project.year}</span>
+                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-lg border border-[#B47B84]/20">
+                  <span className="font-mono text-xs text-[#B47B84]">{project.year}</span>
                 </div>
               </div>
 
@@ -122,18 +122,18 @@ export default function FeaturedProjectsSection() {
               <div className="p-6 flex flex-col flex-1">
                 {/* Category */}
                 <div className="mb-3">
-                  <span className="font-mono text-[10px] text-white/40 uppercase tracking-widest">
+                  <span className="font-mono text-[10px] text-[#6B6B6B] uppercase tracking-widest">
                     {project.category}
                   </span>
                 </div>
 
                 {/* Title - Fixed Height */}
-                <h3 className="font-display font-bold text-xl text-white tracking-tight mb-3 line-clamp-2 min-h-[3.5rem]">
+                <h3 className="font-display font-bold text-xl text-[#1A1A1A] tracking-tight mb-3 line-clamp-2 min-h-[3.5rem]">
                   {project.title}
                 </h3>
 
                 {/* Description - Fixed Height */}
-                <p className="text-white/60 text-sm leading-relaxed mb-4 line-clamp-3 min-h-[4rem]">
+                <p className="text-[#3D3D3D] text-sm leading-relaxed mb-4 line-clamp-3 min-h-[4rem]">
                   {project.description}
                 </p>
 
@@ -142,23 +142,23 @@ export default function FeaturedProjectsSection() {
                   {project.tags.slice(0, 3).map((tag) => (
                     <span
                       key={tag}
-                      className="text-[10px] font-mono px-2.5 py-1 bg-white/5 text-white/70 border border-white/10 rounded-full h-fit"
+                      className="text-[10px] font-mono px-2.5 py-1 bg-[#B47B84]/10 text-[#3D3D3D] border border-[#B47B84]/20 rounded-full h-fit"
                     >
                       {tag}
                     </span>
                   ))}
                   {project.tags.length > 3 && (
-                    <span className="text-[10px] font-mono px-2.5 py-1 text-white/50">
+                    <span className="text-[10px] font-mono px-2.5 py-1 text-[#6B6B6B]">
                       +{project.tags.length - 3}
                     </span>
                   )}
                 </div>
 
                 {/* Button - Pushed to Bottom */}
-                <div className="mt-auto pt-4 border-t border-white/10">
+                <div className="mt-auto pt-4 border-t border-[#B47B84]/10">
                   <button
                     onClick={() => handleOpenCaseStudy(project)}
-                    className="w-full flex items-center justify-center gap-2 bg-accent-teal/10 hover:bg-accent-teal text-accent-teal hover:text-charcoal-pure font-display text-xs font-bold px-4 py-3 rounded-lg transition-all duration-300 border border-accent-teal/30"
+                    className="w-full flex items-center justify-center gap-2 bg-[#B47B84]/15 hover:bg-[#B47B84] text-[#B47B84] hover:text-white font-display text-xs font-bold px-4 py-3 rounded-lg transition-all duration-300 border border-[#B47B84]/30"
                   >
                     <FileText className="w-4 h-4" />
                     View Case Study
@@ -168,7 +168,7 @@ export default function FeaturedProjectsSection() {
 
                 {/* Client */}
                 <div className="pt-4">
-                  <p className="text-[10px] font-mono text-white/30 uppercase tracking-wider text-center">
+                  <p className="text-[10px] font-mono text-[#6B6B6B] uppercase tracking-wider text-center">
                     {project.client}
                   </p>
                 </div>
@@ -179,15 +179,15 @@ export default function FeaturedProjectsSection() {
 
         {/* Elegant Scroll Indicator Track Line */}
         <div className="max-w-7xl mx-auto mt-6 flex flex-col sm:flex-row items-center justify-between gap-4 pointer-events-none relative z-10">
-          <div className="w-full sm:max-w-[240px] h-[3px] bg-white/10 rounded-full overflow-hidden">
+          <div className="w-full sm:max-w-[240px] h-[3px] bg-[#B47B84]/15 rounded-full overflow-hidden">
             <div 
-              className="h-full bg-accent-teal transition-all duration-300 rounded-full shadow-[0_0_8px_rgba(242,125,38,0.5)]" 
+              className="h-full bg-[#B47B84] transition-all duration-300 rounded-full shadow-[0_0_8px_rgba(180,123,132,0.4)]" 
               style={{ width: `${Math.max(8, scrollProgress)}%` }}
             />
           </div>
-          <div className="text-[10px] font-mono text-white/30 uppercase tracking-[0.2em] flex items-center gap-2">
+          <div className="text-[10px] font-mono text-[#6B6B6B] uppercase tracking-[0.2em] flex items-center gap-2">
             <span>DRAG TRACKPAD OR SWIPE OR USE NAV</span>
-            <span className="w-1.5 h-1.5 rounded-full bg-accent-teal animate-pulse"></span>
+            <span className="w-1.5 h-1.5 rounded-full bg-[#B47B84] animate-pulse"></span>
           </div>
         </div>
       </motion.div>

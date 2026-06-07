@@ -4,9 +4,9 @@ import { EXPERIENCE } from "../data";
 
 export default function ExperienceSection() {
   return (
-    <section className="relative py-24 md:py-32 px-6 md:px-12 bg-charcoal-pure overflow-hidden" id="experience">
+    <section className="relative py-24 md:py-32 px-6 md:px-12 bg-[#F5EDE4] overflow-hidden" id="experience">
       {/* Decorative gradient glowing spot */}
-      <div className="absolute top-1/3 left-[-15%] w-[600px] h-[600px] bg-accent-teal/[0.03] rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute top-1/3 left-[-15%] w-[600px] h-[600px] bg-[#B47B84]/[0.06] rounded-full blur-[140px] pointer-events-none" />
 
       {/* Scroll reveal wrapper */}
       <motion.div
@@ -18,12 +18,12 @@ export default function ExperienceSection() {
       >
         {/* Styled Section Header */}
         <div className="mb-16 md:mb-24" id="experience-header">
-          <div className="flex border-l-2 border-accent-teal pl-4 flex-col">
-            <span className="font-mono text-xs text-accent-teal uppercase tracking-[0.25em] mb-2">TIMELINE LOGS</span>
-            <h2 className="font-display font-extrabold text-3xl md:text-5xl text-white tracking-tight">
+          <div className="flex border-l-2 border-[#B47B84] pl-4 flex-col">
+            <span className="font-mono text-xs text-[#B47B84] uppercase tracking-[0.25em] mb-2">TIMELINE LOGS</span>
+            <h2 className="font-display font-extrabold text-3xl md:text-5xl text-[#1A1A1A] tracking-tight">
               Professional Experience
             </h2>
-            <p className="text-white/40 text-xs font-mono font-light mt-1">CURATED CHRONOLOGICAL INDUSTRY CONTRIBUTIONS</p>
+            <p className="text-[#6B6B6B] text-xs font-mono font-light mt-1">CURATED CHRONOLOGICAL INDUSTRY CONTRIBUTIONS</p>
           </div>
         </div>
 
@@ -36,7 +36,7 @@ export default function ExperienceSection() {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               key={exp.id}
-              className="group relative bg-[#15171B]/20 hover:bg-[#15171B]/55 border border-white/5 hover:border-white/10 p-6 md:p-10 rounded-2xl transition-all duration-300"
+              className="group relative bg-white/50 hover:bg-white/70 border border-[#B47B84]/15 hover:border-[#B47B84]/30 p-6 md:p-10 rounded-2xl transition-all duration-300"
               id={`experience-block-${exp.id}`}
             >
               {/* Grid layout for company profile and descriptions */}
@@ -44,15 +44,15 @@ export default function ExperienceSection() {
                 
                 {/* Left Column: Period & Company Brand */}
                 <div className="lg:col-span-4 space-y-2">
-                  <span className="font-mono text-xs text-accent-teal font-semibold tracking-wider font-display uppercase block">
+                  <span className="font-mono text-xs text-[#B47B84] font-semibold tracking-wider font-display uppercase block">
                     {exp.period}
                   </span>
                   
-                  <h3 className="font-display font-bold text-2xl text-white tracking-tight group-hover:text-accent-teal transition-colors">
+                  <h3 className="font-display font-bold text-2xl text-[#1A1A1A] tracking-tight group-hover:text-[#B47B84] transition-colors">
                     {exp.company}
                   </h3>
                   
-                  <p className="text-white/40 font-mono text-xs uppercase tracking-widest leading-relaxed">
+                  <p className="text-[#6B6B6B] font-mono text-xs uppercase tracking-widest leading-relaxed">
                     // {exp.role}
                   </p>
                 </div>
@@ -63,8 +63,8 @@ export default function ExperienceSection() {
                   <div className="space-y-4">
                     {exp.description.map((bullet, bIdx) => (
                       <div key={bIdx} className="flex items-start gap-3">
-                        <div className="w-1.5 h-1.5 rounded-full bg-accent-teal shrink-0 mt-2" />
-                        <p className="text-white/70 font-sans font-light text-sm leading-relaxed">
+                        <div className="w-1.5 h-1.5 rounded-full bg-[#B47B84] shrink-0 mt-2" />
+                        <p className="text-[#3D3D3D] font-sans font-light text-sm leading-relaxed">
                           {bullet}
                         </p>
                       </div>
@@ -72,11 +72,11 @@ export default function ExperienceSection() {
                   </div>
 
                   {/* Tags cluster */}
-                  <div className="flex flex-wrap gap-2 pt-4 border-t border-white/5">
+                  <div className="flex flex-wrap gap-2 pt-4 border-t border-[#B47B84]/10">
                     {exp.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="text-[10px] font-mono px-3 py-1 bg-white/[0.03] text-white/60 rounded border border-white/5"
+                        className="text-[10px] font-mono px-3 py-1 bg-[#B47B84]/10 text-[#3D3D3D] rounded border border-[#B47B84]/15"
                       >
                         {tag}
                       </span>
@@ -87,7 +87,7 @@ export default function ExperienceSection() {
               </div>
 
               {/* Glowing vertical reticle in corners on hover */}
-              <div className="absolute top-4 right-4 text-white/5 group-hover:text-accent-teal transition-colors" id={`experience-reticle-${exp.id}`}>
+              <div className="absolute top-4 right-4 text-[#B47B84]/20 group-hover:text-[#B47B84] transition-colors" id={`experience-reticle-${exp.id}`}>
                 <ArrowUpRight className="w-5 h-5" />
               </div>
             </motion.div>
