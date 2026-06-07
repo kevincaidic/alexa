@@ -5,7 +5,7 @@ import FeaturedProjectsSection from "./components/FeaturedProjectsSection";
 import AboutSection from "./components/AboutSection";
 import ExperienceSection from "./components/ExperienceSection";
 import CertificatesSection from "./components/CertificatesSection";
-import ContactSection from "./components/ContactSection";
+import RecognitionsSection from "./components/RecognitionsSection";
 import Footer from "./components/Footer";
 
 export default function App() {
@@ -20,7 +20,7 @@ export default function App() {
         "about",
         "experience",
         "certificates",
-        "contact"
+        "recognitions"
       ];
       const scrollPos = window.scrollY + window.innerHeight / 3;
 
@@ -70,8 +70,8 @@ export default function App() {
         {/* Verified credentials & certificate modal popups */}
         <CertificatesSection />
 
-        {/* Contact dispatch form portal */}
-        <ContactSection />
+        {/* Recognitions and Achievements */}
+        <RecognitionsSection />
 
       </main>
 

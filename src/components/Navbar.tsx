@@ -42,7 +42,7 @@ export default function Navbar({ activeSection }: NavbarProps) {
     { name: "Projects", href: "#projects" },
     { name: "Experience", href: "#experience" },
     { name: "Certificates", href: "#certificates" },
-    { name: "Contact", href: "#contact" },
+    { name: "Recognitions", href: "#recognitions" },
   ];
 
   const handleScrollTo = (id: string) => {
@@ -118,14 +118,14 @@ export default function Navbar({ activeSection }: NavbarProps) {
             </div>
 
             {/* Custom Interactive Magnet CTA */}
-            <button
-              onClick={() => handleScrollTo("#contact")}
+            <a
+              href={`mailto:${PORTFOLIO_OWNER.email}`}
               className="flex items-center gap-1 bg-white hover:bg-accent-teal text-charcoal-pure text-xs font-display uppercase tracking-wider font-bold px-5 py-2.5 rounded-full shadow-lg hover:shadow-accent-teal/20 transition-all duration-300"
               id="cta-navbar-contact"
             >
-              Start Project
+              Email Me
               <ArrowUpRight className="w-3.5 h-3.5" />
-            </button>
+            </a>
           </div>
 
           {/* Mobile Menu Icon */}
@@ -174,16 +174,16 @@ export default function Navbar({ activeSection }: NavbarProps) {
                 </motion.button>
               ))}
               
-              <motion.button
+              <motion.a
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: navItems.length * 0.05 }}
-                onClick={() => handleScrollTo("#contact")}
+                href={`mailto:${PORTFOLIO_OWNER.email}`}
                 className="mt-8 bg-accent-purple hover:bg-accent-teal text-white hover:text-charcoal-pure text-sm font-display tracking-widest uppercase font-bold py-4 rounded-full transition-all duration-300"
                 id="mobile-nav-cta"
               >
-                Get In Touch
-              </motion.button>
+                Email Me
+              </motion.a>
             </div>
 
             <div className="mt-auto text-center text-white/30 text-xs font-mono">

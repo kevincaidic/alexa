@@ -1,4 +1,4 @@
-import { Project, ExperienceItem, SkillCategory, CertificateItem, ExplorationItem, DesignStage } from "./types";
+import { Project, ExperienceItem, SkillCategory, CertificateItem, ExplorationItem, DesignStage, RecognitionItem } from "./types";
 
 export const PORTFOLIO_OWNER = {
   name: "Methushiela Alexa Cagaanan",
@@ -476,3 +476,38 @@ export const CREATIVE_EXPLORATIONS: ExplorationItem[] = [
 ];
 
 
+
+export const RECOGNITIONS: RecognitionItem[] = [
+  {
+    id: "rec1",
+    period: "AY 2024-2025",
+    category: "ACADEMIC EXCELLENCE",
+    title: "Dean's Lister",
+    institution: "Bachelor of Science in Information Technology - DNSC",
+    description: "Recognized for outstanding academic performance during the academic year."
+  },
+  {
+    id: "rec2",
+    period: "AY 2025-2026",
+    category: "ACADEMIC EXCELLENCE",
+    title: "Dean's Lister",
+    institution: "Bachelor of Science in Information Technology - DNSC",
+    description: "Recognized for outstanding academic performance during the academic year."
+  },
+  {
+    id: "rec3",
+    period: "2026",
+    category: "CAPSTONE",
+    title: "AniMed: A Machine Learning-Integrated System for Veterinary Records and Prescription Management",
+    institution: "BSIT Capstone Project",
+    description: "Developed a web-based veterinary management system with machine learning, GIS disease mapping, and electronic medical records."
+  },
+  {
+    id: "rec4",
+    period: "2026",
+    category: "COMPLETED 486 HOURS",
+    title: "On-the-Job Training — Research Division",
+    institution: "Davao del Norte State College",
+    description: "Supported research monitoring, publication design, document management, and research database updates."
+  }
+];

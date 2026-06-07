@@ -66,4 +66,13 @@ export interface DesignStage {
   insights: string;
 }
 
+export interface RecognitionItem {
+  id: string;
+  period: string;
+  category: string;
+  title: string;
+  institution: string;
+  description: string;
+}
+
 
