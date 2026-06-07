@@ -108,7 +108,7 @@ export default function HeroSection() {
             id="hero-core-headline"
           >
             <span>Designing</span>
-            <span className="text-transparent" style={{ WebkitTextStroke: "1.5px rgba(26, 26, 26, 0.25)" }}>Experiences</span>
+            <span className="text-transparent" style={{ WebkitTextStroke: "2px #B47B84" }}>Experiences</span>
             <span>That Feel</span>
             <span className="font-light italic text-transparent bg-clip-text bg-gradient-to-r from-[#B47B84] via-[#C98B95] to-[#E89F9C] select-none pb-2">Effortless.</span>
           </motion.h1>
