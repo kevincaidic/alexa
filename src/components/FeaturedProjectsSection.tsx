@@ -352,17 +352,17 @@ export default function FeaturedProjectsSection() {
                         animate={{ opacity: 1, y: 0 }}
                         className="space-y-6"
                       >
-                        <p className="font-mono text-xs text-accent-teal uppercase tracking-wider">Optimal Interface Pathways</p>
-                        <h4 className="font-display font-bold text-2xl text-white mb-6">User Flow Architecture</h4>
+                        <p className="font-mono text-xs text-[#B47B84] uppercase tracking-wider">Optimal Interface Pathways</p>
+                        <h4 className="font-display font-bold text-2xl text-[#1A1A1A] mb-6">User Flow Architecture</h4>
 
-                        <div className="relative pl-6 border-l border-white/10 space-y-8 py-2">
+                        <div className="relative pl-6 border-l border-[#B47B84]/30 space-y-8 py-2">
                           {selectedProject.caseStudy.userFlowSteps.map((step, idx) => (
                             <div key={idx} className="relative">
                               {/* Glowing bullet */}
-                              <div className="absolute -left-[30px] top-1.5 w-4 h-4 rounded-full bg-[#050505] border-2 border-accent-teal flex items-center justify-center">
-                                <Link2 className="w-2 h-2 text-accent-teal" />
+                              <div className="absolute -left-[30px] top-1.5 w-4 h-4 rounded-full bg-white border-2 border-[#B47B84] flex items-center justify-center">
+                                <Link2 className="w-2 h-2 text-[#B47B84]" />
                               </div>
-                              <p className="text-sm font-sans font-medium text-white tracking-wide">{step}</p>
+                              <p className="text-sm font-sans font-medium text-[#1A1A1A] tracking-wide">{step}</p>
                             </div>
                           ))}
                         </div>
@@ -376,29 +376,29 @@ export default function FeaturedProjectsSection() {
                         animate={{ opacity: 1, y: 0 }}
                         className="space-y-6"
                       >
-                        <p className="font-mono text-xs text-accent-teal uppercase tracking-wider">Grid Mechanics & Blueprint Studies</p>
-                        <h4 className="font-display font-bold text-2xl text-white mb-4">Structure Constraints</h4>
-                        <p className="text-white/70 text-sm font-sans font-light leading-relaxed mb-6">
+                        <p className="font-mono text-xs text-[#B47B84] uppercase tracking-wider">Grid Mechanics & Blueprint Studies</p>
+                        <h4 className="font-display font-bold text-2xl text-[#1A1A1A] mb-4">Structure Constraints</h4>
+                        <p className="text-[#3D3D3D] text-sm font-sans font-light leading-relaxed mb-6">
                           {selectedProject.caseStudy.wireframesDescription}
                         </p>
 
                         {/* Interactive Blueprint Canvas Simulation */}
-                        <div className="border border-white/10 rounded-xl bg-black/40 p-4 border-dashed relative">
-                          <div className="absolute top-2 right-2 font-mono text-[8px] text-white/30 uppercase tracking-widest">DIAGNOSTIC DISPLAY</div>
-                          <div className="grid grid-cols-12 gap-3 h-32 items-stretch font-mono text-[9px] text-white/30 text-center">
-                            <div className="col-span-3 border border-white/5 rounded flex flex-col justify-between p-2 bg-white/[0.01]">
+                        <div className="border border-[#B47B84]/30 rounded-xl bg-white/40 p-4 border-dashed relative">
+                          <div className="absolute top-2 right-2 font-mono text-[8px] text-[#6B6B6B] uppercase tracking-widest">DIAGNOSTIC DISPLAY</div>
+                          <div className="grid grid-cols-12 gap-3 h-32 items-stretch font-mono text-[9px] text-[#6B6B6B] text-center">
+                            <div className="col-span-3 border border-[#B47B84]/20 rounded flex flex-col justify-between p-2 bg-white/50">
                               <span>LEFT BAR</span>
                               <span className="text-[7px]">PERSISTENT=FALSE</span>
                             </div>
-                            <div className="col-span-9 border border-accent-teal/20 rounded flex flex-col justify-between p-2 bg-accent-teal/[0.02]">
+                            <div className="col-span-9 border border-[#B47B84]/40 rounded flex flex-col justify-between p-2 bg-[#B47B84]/5">
                               <div className="flex justify-between items-center w-full">
-                                <span className="text-accent-teal">PRIMARY WORKSPACE GRID</span>
-                                <span className="text-[#FF007A]">BENTO FRAME</span>
+                                <span className="text-[#B47B84]">PRIMARY WORKSPACE GRID</span>
+                                <span className="text-[#C98B95]">BENTO FRAME</span>
                               </div>
                               <div className="grid grid-cols-3 gap-2">
-                                <div className="border border-white/5 rounded py-3 bg-[#050505]">W1</div>
-                                <div className="border border-white/5 rounded py-3 bg-[#050505]">W2</div>
-                                <div className="border border-white/5 rounded py-3 bg-[#050505]">W3</div>
+                                <div className="border border-[#B47B84]/20 rounded py-3 bg-white">W1</div>
+                                <div className="border border-[#B47B84]/20 rounded py-3 bg-white">W2</div>
+                                <div className="border border-[#B47B84]/20 rounded py-3 bg-white">W3</div>
                               </div>
                             </div>
                           </div>
@@ -413,28 +413,28 @@ export default function FeaturedProjectsSection() {
                         animate={{ opacity: 1, y: 0 }}
                         className="space-y-6"
                       >
-                        <p className="font-mono text-xs text-accent-teal uppercase tracking-wider">Design Token Values</p>
-                        <h4 className="font-display font-bold text-2xl text-white mb-4">System Elements</h4>
+                        <p className="font-mono text-xs text-[#B47B84] uppercase tracking-wider">Design Token Values</p>
+                        <h4 className="font-display font-bold text-2xl text-[#1A1A1A] mb-4">System Elements</h4>
 
                         {/* Palette displays */}
                         <div className="space-y-6">
                           <div>
-                            <p className="text-xs font-mono uppercase text-white/40 tracking-wider mb-3">Color Token Tokens (Click to Copy)</p>
+                            <p className="text-xs font-mono uppercase text-[#6B6B6B] tracking-wider mb-3">Color Token Tokens (Click to Copy)</p>
                             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                               {selectedProject.caseStudy.designSystem.colors.map((color) => (
                                 <div
                                   key={color.hex}
                                   onClick={() => handleCopyHex(color.hex)}
-                                  className="group cursor-pointer bg-white/5 rounded-xl p-3 border border-white/5 hover:border-white/20 transition-all text-center select-none"
+                                  className="group cursor-pointer bg-white/60 rounded-xl p-3 border border-[#B47B84]/15 hover:border-[#B47B84]/40 transition-all text-center select-none"
                                 >
                                   <div
                                     className="w-full h-12 rounded-lg mb-2 shadow-inner group-hover:scale-[1.02] transition-transform"
                                     style={{ backgroundColor: color.hex }}
                                   />
-                                  <p className="text-[10px] text-white/80 font-medium font-display leading-tight">{color.name}</p>
-                                  <p className="text-[9px] font-mono text-white/40 mt-0.5 uppercase tracking-wide flex items-center justify-center gap-1 group-hover:text-accent-teal transition-colors">
+                                  <p className="text-[10px] text-[#1A1A1A] font-medium font-display leading-tight">{color.name}</p>
+                                  <p className="text-[9px] font-mono text-[#6B6B6B] mt-0.5 uppercase tracking-wide flex items-center justify-center gap-1 group-hover:text-[#B47B84] transition-colors">
                                     {copiedHex === color.hex ? (
-                                      <span className="text-accent-emerald flex items-center gap-0.5">COPIED!</span>
+                                      <span className="text-[#B47B84] flex items-center gap-0.5">COPIED!</span>
                                     ) : (
                                       <>
                                         {color.hex} <Copy className="w-2.5 h-2.5" />
@@ -446,18 +446,18 @@ export default function FeaturedProjectsSection() {
                             </div>
                           </div>
 
-                          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 border-t border-white/5 text-sm font-sans font-light">
+                          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 border-t border-[#B47B84]/10 text-sm font-sans font-light">
                             <div>
-                              <p className="text-xs font-mono uppercase text-white/40 tracking-wider mb-2">Typography Tokens</p>
-                              <p className="text-[#00F5D4] font-mono text-xs bg-black/40 px-3 py-2 rounded border border-white/5 leading-relaxed">
+                              <p className="text-xs font-mono uppercase text-[#6B6B6B] tracking-wider mb-2">Typography Tokens</p>
+                              <p className="text-[#B47B84] font-mono text-xs bg-white/50 px-3 py-2 rounded border border-[#B47B84]/20 leading-relaxed">
                                 {selectedProject.caseStudy.designSystem.typography}
                               </p>
                             </div>
                             <div>
-                              <p className="text-xs font-mono uppercase text-white/40 tracking-wider mb-2">Bespoke Design Tokens</p>
+                              <p className="text-xs font-mono uppercase text-[#6B6B6B] tracking-wider mb-2">Bespoke Design Tokens</p>
                               <div className="flex flex-wrap gap-1.5">
                                 {selectedProject.caseStudy.designSystem.elements.map((el) => (
-                                  <span key={el} className="bg-white/5 px-2.5 py-1 text-xs text-white/70 rounded border border-white/5 font-mono">
+                                  <span key={el} className="bg-white/60 px-2.5 py-1 text-xs text-[#3D3D3D] rounded border border-[#B47B84]/15 font-mono">
                                     {el}
                                   </span>
                                 ))}
@@ -469,13 +469,13 @@ export default function FeaturedProjectsSection() {
                     )}
 
                     {/* Interactive Prototype Simulation Bar */}
-                    <div className="mt-10 border-t border-white/5 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs font-mono text-white/40 gap-4">
+                    <div className="mt-10 border-t border-[#B47B84]/10 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs font-mono text-[#6B6B6B] gap-4">
                       <div className="flex items-center gap-1.5">
-                        <PlayCircle className="w-3.5 h-3.5 text-accent-emerald" />
+                        <PlayCircle className="w-3.5 h-3.5 text-[#B47B84]" />
                         <span>Interactive Prototype Simulation Phase: </span>
-                        <span className="text-white font-medium">READY</span>
+                        <span className="text-[#1A1A1A] font-medium">READY</span>
                       </div>
-                      <div className="text-[10px] bg-white/5 px-3 py-1 rounded text-white/80 italic">
+                      <div className="text-[10px] bg-white/60 px-3 py-1 rounded text-[#3D3D3D] italic">
                         {selectedProject.caseStudy.prototypeDescription}
                       </div>
                     </div>

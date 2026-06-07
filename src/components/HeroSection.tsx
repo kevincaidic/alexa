@@ -152,7 +152,7 @@ export default function HeroSection() {
               className="px-6 py-4 border border-[#B47B84]/30 hover:border-[#B47B84] text-[#3D3D3D] hover:text-[#1A1A1A] rounded-full text-xs font-display uppercase tracking-widest transition-all duration-300 backdrop-blur-sm"
               id="hero-btn-contact"
             >
-              Collaborate
+              Recognitions
             </a>
           </motion.div>
 
