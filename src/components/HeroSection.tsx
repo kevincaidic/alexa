@@ -121,7 +121,7 @@ export default function HeroSection() {
             className="text-white/60 md:text-lg max-w-xl mb-10 font-sans font-light leading-relaxed"
             id="hero-desc-para"
           >
-            Hi, I'm <span className="text-white font-medium">Methushiela Alexa</span>. I engineer custom high-fidelity digital interfaces, micro-motion frameworks, and luxurious visual grids for people who value precision and detail.
+            Hi, I'm <span className="text-white font-medium">Methushiela Alexa</span>. I am a graduating BSIT student passionate about system development, UI design, and technology-driven solutions. I enjoy transforming ideas into functional applications while continuously learning and growing in the field of information technology.  
           </motion.p>
 
           {/* Interactive Magnetic Trigger Buttons */}

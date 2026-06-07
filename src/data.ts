@@ -2,11 +2,11 @@ import { Project, ExperienceItem, SkillCategory, CertificateItem, ExplorationIte
 
 export const PORTFOLIO_OWNER = {
   name: "Methushiela Alexa Cagaanan",
-  role: "Lead UI/UX Designer",
-  subtitle: "Designing Experiences That Feel Effortless and Memorable",
-  bioHeadline: "A creative visionary bridging meticulous grids with emotional interfaces.",
-  bioParagraph1: "I am a detail-obsessed UI/UX Designer specialized in creating high-fidelity visual ecosystems, interactive digital sculptures, and custom luxury web portals. Focusing heavily on modern editorial typography, tactile grid systems, and subtle spatial micro-animations, I design products that don't just solve problems—they tell compelling visual stories.",
-  bioParagraph2: "Based in Asia, I collaborate globally with deep-tech startups and premium luxury brands. My philosophy is rooted in architectural design honesty: stripping away unneeded visual noise to reveal clean layout structures wrapped in ambient glowing contrast.",
+  role: "Aspiring IT Professional",
+  subtitle: "Passionate About Technology, Innovation, and Continuous Learning",
+  bioHeadline: "Developing systems that are functional, user-friendly, and impactful.",
+  bioParagraph1: "I am a graduating BSIT student focused on developing systems that are functional, user-friendly, and impactful. My interests include system development, UI design, database management, and digital solutions that help solve real-world challenges.",
+  bioParagraph2: "Through academic projects, internships, and collaborative experiences, I have gained practical skills in programming, documentation, data management, and project development. I believe that technology is most valuable when it simplifies processes, improves efficiency, and creates meaningful experiences for users. This portfolio showcases the projects, certifications, achievements, and experiences that have shaped my growth as a future information technology professional.",
   portraitUrl: "/Profile/meto.jpg",
   email: "cagaanan.methushielaalexa@dnsc.edu.ph",
   socials: [
