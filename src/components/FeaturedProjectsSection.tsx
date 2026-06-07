@@ -199,25 +199,25 @@ export default function FeaturedProjectsSection() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-[#050505]/98 z-[100] overflow-y-auto pt-16 md:pt-20 pb-12 flex justify-center"
+            className="fixed inset-0 bg-[#F5EDE4]/98 z-[100] overflow-y-auto pt-16 md:pt-20 pb-12 flex justify-center"
             id="case-study-portal-pane"
           >
             {/* Custom interactive dashboard layout */}
             <div className="w-full max-w-6xl mx-auto px-6 relative" id="case-study-frame">
               
               {/* Header section with Close Trigger */}
-              <div className="flex items-center justify-between border-b border-white/10 pb-6 mb-10" id="case-study-header">
+              <div className="flex items-center justify-between border-b border-[#B47B84]/15 pb-6 mb-10" id="case-study-header">
                 <div>
-                  <span className="font-mono text-[#00F5D4] text-[10px] uppercase tracking-[0.25em]">{selectedProject.category}</span>
-                  <p className="text-[11px] font-mono text-white/30 uppercase tracking-widest mt-1">PRODUCT LAUNCH INITIATIVE • {selectedProject.year}</p>
+                  <span className="font-mono text-[#B47B84] text-[10px] uppercase tracking-[0.25em]">{selectedProject.category}</span>
+                  <p className="text-[11px] font-mono text-[#6B6B6B] uppercase tracking-widest mt-1">PRODUCT LAUNCH INITIATIVE • {selectedProject.year}</p>
                 </div>
                 
                 <button
                   onClick={() => setSelectedProject(null)}
-                  className="flex items-center gap-1.5 bg-white/5 hover:bg-white/15 px-4.5 py-2 rounded-full text-xs font-display tracking-widest uppercase font-bold border border-white/10 transition-colors text-white"
+                  className="flex items-center gap-1.5 bg-white/80 hover:bg-white px-4.5 py-2 rounded-full text-xs font-display tracking-widest uppercase font-bold border border-[#B47B84]/30 hover:border-[#B47B84] transition-colors text-[#1A1A1A]"
                   title="Close Project Portal"
                 >
-                  <Minimize2 className="w-3.5 h-3.5 text-accent-teal" />
+                  <Minimize2 className="w-3.5 h-3.5 text-[#B47B84]" />
                   Close Portal
                 </button>
               </div>
@@ -230,7 +230,7 @@ export default function FeaturedProjectsSection() {
                   <button
                     onClick={() => setActiveCaseTab("overview")}
                     className={`flex items-center gap-2 px-4 py-2.5 rounded-lg text-xs font-display font-bold tracking-widest uppercase text-left w-full transition-colors whitespace-nowrap min-w-fit ${
-                      activeCaseTab === "overview" ? "bg-accent-purple text-white" : "hover:bg-white/5 text-white/55"
+                      activeCaseTab === "overview" ? "bg-[#B47B84] text-white" : "hover:bg-white/50 text-[#3D3D3D]"
                     }`}
                   >
                     <FileText className="w-3.5 h-3.5" />
@@ -239,7 +239,7 @@ export default function FeaturedProjectsSection() {
                   <button
                     onClick={() => setActiveCaseTab("research")}
                     className={`flex items-center gap-2 px-4 py-2.5 rounded-lg text-xs font-display font-bold tracking-widest uppercase text-left w-full transition-colors whitespace-nowrap min-w-fit ${
-                      activeCaseTab === "research" ? "bg-accent-purple text-white" : "hover:bg-white/5 text-white/55"
+                      activeCaseTab === "research" ? "bg-[#B47B84] text-white" : "hover:bg-white/50 text-[#3D3D3D]"
                     }`}
                   >
                     <Lightbulb className="w-3.5 h-3.5" />
@@ -248,7 +248,7 @@ export default function FeaturedProjectsSection() {
                   <button
                     onClick={() => setActiveCaseTab("flow")}
                     className={`flex items-center gap-2 px-4 py-2.5 rounded-lg text-xs font-display font-bold tracking-widest uppercase text-left w-full transition-colors whitespace-nowrap min-w-fit ${
-                      activeCaseTab === "flow" ? "bg-accent-purple text-white" : "hover:bg-white/5 text-white/55"
+                      activeCaseTab === "flow" ? "bg-[#B47B84] text-white" : "hover:bg-white/50 text-[#3D3D3D]"
                     }`}
                   >
                     <Compass className="w-3.5 h-3.5" />
@@ -257,7 +257,7 @@ export default function FeaturedProjectsSection() {
                   <button
                     onClick={() => setActiveCaseTab("architecture")}
                     className={`flex items-center gap-2 px-4 py-2.5 rounded-lg text-xs font-display font-bold tracking-widest uppercase text-left w-full transition-colors whitespace-nowrap min-w-fit ${
-                      activeCaseTab === "architecture" ? "bg-accent-purple text-white" : "hover:bg-white/5 text-white/55"
+                      activeCaseTab === "architecture" ? "bg-[#B47B84] text-white" : "hover:bg-white/50 text-[#3D3D3D]"
                     }`}
                   >
                     <Layout className="w-3.5 h-3.5" />
@@ -266,7 +266,7 @@ export default function FeaturedProjectsSection() {
                   <button
                     onClick={() => setActiveCaseTab("system")}
                     className={`flex items-center gap-2 px-4 py-2.5 rounded-lg text-xs font-display font-bold tracking-widest uppercase text-left w-full transition-colors whitespace-nowrap min-w-fit ${
-                      activeCaseTab === "system" ? "bg-accent-purple text-white" : "hover:bg-white/5 text-white/55"
+                      activeCaseTab === "system" ? "bg-[#B47B84] text-white" : "hover:bg-white/50 text-[#3D3D3D]"
                     }`}
                   >
                     <Palette className="w-3.5 h-3.5" />
@@ -276,10 +276,10 @@ export default function FeaturedProjectsSection() {
 
                 {/* 2. Main content display plate */}
                 <div className="lg:col-span-9" id="case-study-visual-plate">
-                  <div className="glass-panel-heavy p-6 md:p-10 rounded-2xl border border-white/10 shadow-2xl relative min-h-[460px]">
+                  <div className="glass-panel-heavy p-6 md:p-10 rounded-2xl border border-[#B47B84]/20 shadow-2xl relative min-h-[460px] bg-white/60">
                     
                     {/* Glowing highlight anchor background */}
-                    <div className="absolute bottom-0 right-0 w-64 h-64 bg-accent-teal/5 rounded-full blur-[80px]" />
+                    <div className="absolute bottom-0 right-0 w-64 h-64 bg-[#B47B84]/5 rounded-full blur-[80px]" />
 
                     {/* OVERVIEW & PROBLEM */}
                     {activeCaseTab === "overview" && (
@@ -289,28 +289,28 @@ export default function FeaturedProjectsSection() {
                         className="space-y-8"
                       >
                         <div>
-                          <p className="font-mono text-xs text-accent-teal uppercase tracking-widest mb-1.5">Launch Phase Archetype</p>
-                          <h4 className="font-display font-bold text-3xl text-white">{selectedProject.title}</h4>
+                          <p className="font-mono text-xs text-[#B47B84] uppercase tracking-widest mb-1.5">Launch Phase Archetype</p>
+                          <h4 className="font-display font-bold text-3xl text-[#1A1A1A]">{selectedProject.title}</h4>
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">
                           <div>
-                            <p className="text-xs font-mono uppercase text-white/40 tracking-wider mb-2">The Strategic Problem</p>
-                            <p className="font-sans font-light text-white/70 leading-relaxed text-sm">
+                            <p className="text-xs font-mono uppercase text-[#6B6B6B] tracking-wider mb-2">The Strategic Problem</p>
+                            <p className="font-sans font-light text-[#3D3D3D] leading-relaxed text-sm">
                               {selectedProject.caseStudy.problem}
                             </p>
                           </div>
                           <div>
-                            <p className="text-xs font-mono uppercase text-white/40 tracking-wider mb-2">The Design Solution</p>
-                            <p className="font-sans font-light text-white/70 leading-relaxed text-sm">
+                            <p className="text-xs font-mono uppercase text-[#6B6B6B] tracking-wider mb-2">The Design Solution</p>
+                            <p className="font-sans font-light text-[#3D3D3D] leading-relaxed text-sm">
                               {selectedProject.caseStudy.solution}
                             </p>
                           </div>
                         </div>
 
-                        <div className="pt-6 border-t border-white/5">
-                          <p className="text-xs font-mono uppercase text-white/40 tracking-wider mb-3">Enterprise Overview</p>
-                          <p className="text-white/80 font-sans font-light text-sm leading-relaxed">
+                        <div className="pt-6 border-t border-[#B47B84]/10">
+                          <p className="text-xs font-mono uppercase text-[#6B6B6B] tracking-wider mb-3">Enterprise Overview</p>
+                          <p className="text-[#1A1A1A] font-sans font-light text-sm leading-relaxed">
                             {selectedProject.caseStudy.overview}
                           </p>
                         </div>
@@ -324,19 +324,19 @@ export default function FeaturedProjectsSection() {
                         animate={{ opacity: 1, y: 0 }}
                         className="space-y-6"
                       >
-                        <p className="font-mono text-xs text-accent-teal uppercase tracking-wider">Qualitative Research Evidence</p>
-                        <h4 className="font-display font-bold text-2xl text-white mb-6">User Empathy Discoveries</h4>
+                        <p className="font-mono text-xs text-[#B47B84] uppercase tracking-wider">Qualitative Research Evidence</p>
+                        <h4 className="font-display font-bold text-2xl text-[#1A1A1A] mb-6">User Empathy Discoveries</h4>
 
                         <div className="grid grid-cols-1 gap-4">
                           {selectedProject.caseStudy.researchInsights.map((insight, idx) => (
                             <div
                               key={idx}
-                              className="flex items-start gap-4 bg-white/5 p-4 rounded-xl border border-white/5 hover:border-white/10 transition-colors"
+                              className="flex items-start gap-4 bg-white/60 p-4 rounded-xl border border-[#B47B84]/15 hover:border-[#B47B84]/30 transition-colors"
                             >
-                              <div className="w-6 h-6 rounded-full bg-accent-purple/20 text-accent-purple flex items-center justify-center font-mono text-xs font-bold shrink-0 mt-0.5">
+                              <div className="w-6 h-6 rounded-full bg-[#B47B84]/20 text-[#B47B84] flex items-center justify-center font-mono text-xs font-bold shrink-0 mt-0.5">
                                 {idx + 1}
                               </div>
-                              <p className="text-sm font-sans font-light text-white/80 leading-relaxed">
+                              <p className="text-sm font-sans font-light text-[#1A1A1A] leading-relaxed">
                                 {insight}
                               </p>
                             </div>

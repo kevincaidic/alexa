@@ -200,7 +200,7 @@ export default function CertificatesSection() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/90 backdrop-blur-sm z-[100] flex items-center justify-center p-4 overflow-y-auto"
+            className="fixed inset-0 bg-[#F5EDE4]/95 backdrop-blur-sm z-[100] flex items-center justify-center p-4 overflow-y-auto"
             onClick={() => setSelectedCert(null)}
             id="cert-modal-overlay"
           >
@@ -210,14 +210,14 @@ export default function CertificatesSection() {
               exit={{ scale: 0.92, y: 20 }}
               transition={{ type: "spring", stiffness: 350, damping: 25 }}
               onClick={(e) => e.stopPropagation()}
-              className="w-full max-w-lg bg-[#1A1C20] border-2 border-white/20 rounded-2xl shadow-2xl relative my-8 max-h-[85vh] overflow-y-auto"
+              className="w-full max-w-lg bg-white border-2 border-[#B47B84]/30 rounded-2xl shadow-2xl relative my-8 max-h-[85vh] overflow-y-auto"
               id="cert-modal-box"
             >
               {/* Sticky Close Button */}
-              <div className="sticky top-0 z-50 flex justify-end p-4 bg-[#1A1C20]/95 backdrop-blur-sm">
+              <div className="sticky top-0 z-50 flex justify-end p-4 bg-white/98 backdrop-blur-sm">
                 <button
                   onClick={() => setSelectedCert(null)}
-                  className="p-2 bg-white/10 hover:bg-white/20 text-white/70 hover:text-white rounded-lg border border-white/20 hover:border-white/40 cursor-pointer transition-all"
+                  className="p-2 bg-[#B47B84]/10 hover:bg-[#B47B84]/20 text-[#B47B84] hover:text-[#1A1A1A] rounded-lg border border-[#B47B84]/30 hover:border-[#B47B84] cursor-pointer transition-all"
                   title="Close"
                 >
                   <X className="w-5 h-5" />
@@ -227,21 +227,21 @@ export default function CertificatesSection() {
               {/* Scrollable Content */}
               <div className="p-6 md:p-8">
                 {/* Outer decorative border */}
-                <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-accent-purple via-accent-teal to-accent-purple" />
+                <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-[#B47B84] via-[#C98B95] to-[#B47B84]" />
 
               {/* Modal header details */}
-              <div className="flex items-center gap-3.5 mb-6 border-b border-white/10 pb-5">
-                <div className="w-10 h-10 rounded-xl bg-accent-purple/20 text-accent-purple border border-accent-purple/30 flex items-center justify-center">
-                  <Award className="w-5 h-5 text-accent-purple" />
+              <div className="flex items-center gap-3.5 mb-6 border-b border-[#B47B84]/15 pb-5">
+                <div className="w-10 h-10 rounded-xl bg-[#B47B84]/15 text-[#B47B84] border border-[#B47B84]/30 flex items-center justify-center">
+                  <Award className="w-5 h-5 text-[#B47B84]" />
                 </div>
                 <div className="flex-1">
-                  <span className="text-[10px] font-mono text-accent-purple uppercase tracking-[0.2em] block">{selectedCert.issuer}</span>
-                  <h4 className="font-display font-black text-lg text-white leading-tight">{selectedCert.title}</h4>
+                  <span className="text-[10px] font-mono text-[#B47B84] uppercase tracking-[0.2em] block">{selectedCert.issuer}</span>
+                  <h4 className="font-display font-black text-lg text-[#1A1A1A] leading-tight">{selectedCert.title}</h4>
                 </div>
               </div>
 
               {/* Certificate image with high contrast framing */}
-              <div className="aspect-[1.5] rounded-lg overflow-hidden relative border-2 border-white/20 mb-6 bg-charcoal-pure">
+              <div className="aspect-[1.5] rounded-lg overflow-hidden relative border-2 border-[#B47B84]/30 mb-6 bg-white">
                 <img
                   src={selectedCert.imageUrl}
                   alt={selectedCert.title}
@@ -251,32 +251,32 @@ export default function CertificatesSection() {
               </div>
 
               {/* Audit specs checklist */}
-              <div className="space-y-4 bg-[#0B0C0E] border border-white/20 rounded-xl p-4 font-mono text-xs text-white/70 mb-6" id="cert-specifications">
-                <div className="flex justify-between border-b border-white/10 pb-2">
+              <div className="space-y-4 bg-[#F5EDE4] border border-[#B47B84]/20 rounded-xl p-4 font-mono text-xs text-[#3D3D3D] mb-6" id="cert-specifications">
+                <div className="flex justify-between border-b border-[#B47B84]/15 pb-2">
                   <span className="flex items-center gap-1.5">
-                    <ShieldCheck className="w-4 h-4 text-accent-teal" />
+                    <ShieldCheck className="w-4 h-4 text-[#B47B84]" />
                     STATUS
                   </span>
-                  <span className="text-accent-teal font-semibold">VERIFIED & ACTIVE</span>
+                  <span className="text-[#B47B84] font-semibold">VERIFIED & ACTIVE</span>
                 </div>
-                <div className="flex justify-between border-b border-white/10 pb-2">
+                <div className="flex justify-between border-b border-[#B47B84]/15 pb-2">
                   <span className="flex items-center gap-1.5">
-                    <Calendar className="w-4 h-4 text-white/50" />
+                    <Calendar className="w-4 h-4 text-[#6B6B6B]" />
                     CONFERRED DATE
                   </span>
-                  <span className="text-white">{selectedCert.date}</span>
+                  <span className="text-[#1A1A1A]">{selectedCert.date}</span>
                 </div>
                 <div className="flex justify-between">
                   <span>REGISTRY ID</span>
-                  <span className="text-white">{selectedCert.credentialId}</span>
+                  <span className="text-[#1A1A1A]">{selectedCert.credentialId}</span>
                 </div>
               </div>
 
               {/* Custom interactive action with modern feedback replacing window.alert */}
               <div className="flex flex-col gap-4">
                 {verifying && (
-                  <div className="flex items-center gap-2 justify-center py-3 bg-accent-teal/10 border border-accent-teal/30 rounded-xl text-accent-teal font-mono text-xs">
-                    <div className="w-4 h-4 border-2 border-accent-teal border-t-transparent rounded-full animate-spin" />
+                  <div className="flex items-center gap-2 justify-center py-3 bg-[#B47B84]/10 border border-[#B47B84]/30 rounded-xl text-[#B47B84] font-mono text-xs">
+                    <div className="w-4 h-4 border-2 border-[#B47B84] border-t-transparent rounded-full animate-spin" />
                     CONNECTING REGISTRY AUTHORITIES...
                   </div>
                 )}
@@ -284,13 +284,13 @@ export default function CertificatesSection() {
                   <motion.div 
                     initial={{ opacity: 0, y: 5 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="flex flex-col gap-1.5 p-4 bg-accent-emerald/10 border border-accent-emerald/30 rounded-xl"
+                    className="flex flex-col gap-1.5 p-4 bg-[#B47B84]/10 border border-[#B47B84]/30 rounded-xl"
                   >
-                    <div className="flex items-center gap-2 text-accent-emerald font-mono text-xs font-bold">
+                    <div className="flex items-center gap-2 text-[#B47B84] font-mono text-xs font-bold">
                       <Check className="w-4 h-4" />
                       SIGNATURE VERIFICATION SECURED
                     </div>
-                    <p className="text-xs text-accent-emerald/80 font-mono leading-relaxed">
+                    <p className="text-xs text-[#3D3D3D] font-mono leading-relaxed">
                       Cryptographic audit checks validated against registry: {selectedCert.credentialId}
                     </p>
                   </motion.div>
@@ -299,7 +299,7 @@ export default function CertificatesSection() {
                 <div className="flex flex-col sm:flex-row justify-end gap-3 font-display pt-2">
                   <button
                     onClick={() => setSelectedCert(null)}
-                    className="px-6 py-3 bg-white/20 hover:bg-white/30 text-white border-2 border-white/40 hover:border-white/60 rounded-lg text-sm font-bold uppercase tracking-wider transition-all cursor-pointer"
+                    className="px-6 py-3 bg-white/80 hover:bg-white text-[#1A1A1A] border-2 border-[#B47B84]/30 hover:border-[#B47B84] rounded-lg text-sm font-bold uppercase tracking-wider transition-all cursor-pointer"
                   >
                     Close
                   </button>
@@ -308,10 +308,10 @@ export default function CertificatesSection() {
                     disabled={verifying || verifiedSuccess}
                     className={`px-6 py-3 rounded-lg text-sm uppercase tracking-wider transition-all duration-300 font-bold cursor-pointer border-2 ${
                       verifiedSuccess 
-                        ? "bg-accent-emerald/30 text-accent-emerald border-accent-emerald/60 cursor-default" 
+                        ? "bg-[#B47B84]/30 text-[#B47B84] border-[#B47B84]/60 cursor-default" 
                         : verifying 
-                          ? "bg-white/10 text-white/50 border-white/20 cursor-wait" 
-                          : "bg-accent-teal hover:bg-accent-teal/80 text-charcoal-pure border-accent-teal/80 hover:border-accent-teal"
+                          ? "bg-[#B47B84]/10 text-[#6B6B6B] border-[#B47B84]/20 cursor-wait" 
+                          : "bg-[#B47B84] hover:bg-[#C98B95] text-white border-[#B47B84]"
                     }`}
                   >
                     {verifiedSuccess ? "✓ Verified" : verifying ? "Verifying..." : "Verify Now"}
