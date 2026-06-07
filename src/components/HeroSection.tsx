@@ -134,10 +134,10 @@ export default function HeroSection() {
           >
             <button
               onClick={handleScrollToProjects}
-              className="relative px-8 py-4 bg-[#B47B84] hover:bg-[#C98B95] text-white font-display uppercase tracking-wider text-xs font-bold rounded-full shadow-2xl hover:shadow-[#B47B84]/30 transition-all duration-300 group overflow-hidden flex items-center gap-2"
+              className="relative px-8 py-4 bg-[#B47B84] hover:bg-[#C98B95] text-white font-display uppercase tracking-wider text-xs font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group flex items-center gap-2"
               id="hero-btn-explore"
             >
-              <span className="relative z-10 flex items-center gap-1">
+              <span className="flex items-center gap-1">
                 Explore Work
                 <ArrowDownRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:translate-y-0.5 transition-transform" />
               </span>
@@ -149,7 +149,7 @@ export default function HeroSection() {
                 e.preventDefault();
                 document.querySelector("#recognitions")?.scrollIntoView({ behavior: "smooth" });
               }}
-              className="px-6 py-4 border border-[#B47B84]/30 hover:border-[#B47B84] text-[#3D3D3D] hover:text-[#1A1A1A] rounded-full text-xs font-display uppercase tracking-widest transition-all duration-300 backdrop-blur-sm"
+              className="px-6 py-4 bg-white hover:bg-[#B47B84] border-2 border-[#B47B84] text-[#1A1A1A] hover:text-white rounded-full text-xs font-display uppercase tracking-widest transition-all duration-300 font-bold"
               id="hero-btn-contact"
             >
               Recognitions
