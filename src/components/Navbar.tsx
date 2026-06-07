@@ -75,10 +75,10 @@ export default function Navbar({ activeSection }: NavbarProps) {
             className="flex flex-col tracking-wider font-display font-bold text-lg select-none group"
             id="brand-logo-link"
           >
-            <span className="text-[#2D2D2D] group-hover:text-[#B47B84] transition-colors">
+            <span className="text-[#1A1A1A] group-hover:text-[#B47B84] transition-colors">
               METHUSHIELA
             </span>
-            <span className="text-[10px] uppercase text-[#8A8A8A] tracking-[0.3em] font-mono font-normal">
+            <span className="text-[10px] uppercase text-[#6B6B6B] tracking-[0.3em] font-mono font-normal">
               ALEXA CAGAANAN
             </span>
           </a>
@@ -92,7 +92,7 @@ export default function Navbar({ activeSection }: NavbarProps) {
                   key={item.name}
                   onClick={() => handleScrollTo(item.href)}
                   className={`relative px-4 py-1.5 text-xs font-display tracking-wide uppercase transition-colors rounded-full ${
-                    isActive ? "text-white font-semibold" : "text-[#5A5A5A] hover:text-[#2D2D2D]"
+                    isActive ? "text-white font-semibold" : "text-[#3D3D3D] hover:text-[#1A1A1A]"
                   }`}
                   id={`nav-item-${item.name.toLowerCase()}`}
                 >
@@ -138,7 +138,7 @@ export default function Navbar({ activeSection }: NavbarProps) {
             )}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 text-[#2D2D2D] hover:text-[#B47B84] bg-white/40 rounded-full border border-[#B47B84]/10"
+              className="p-2 text-[#1A1A1A] hover:text-[#B47B84] bg-white/40 rounded-full border border-[#B47B84]/10"
               id="mobile-menu-toggle"
             >
               {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -159,7 +159,7 @@ export default function Navbar({ activeSection }: NavbarProps) {
             id="mobile-drawer-root"
           >
             <div className="flex flex-col gap-6 text-center my-auto">
-              <span className="text-[#8A8A8A] uppercase font-mono text-[10px] tracking-[0.2em]">Navigation</span>
+              <span className="text-[#6B6B6B] uppercase font-mono text-[10px] tracking-[0.2em]">Navigation</span>
               {navItems.map((item, idx) => (
                 <motion.button
                   initial={{ opacity: 0, y: 15 }}
@@ -167,7 +167,7 @@ export default function Navbar({ activeSection }: NavbarProps) {
                   transition={{ delay: idx * 0.05 }}
                   key={item.name}
                   onClick={() => handleScrollTo(item.href)}
-                  className="text-2xl font-display font-medium text-[#2D2D2D] hover:text-[#B47B84] transition-colors tracking-wide"
+                  className="text-2xl font-display font-medium text-[#1A1A1A] hover:text-[#B47B84] transition-colors tracking-wide"
                   id={`mobile-nav-${item.name.toLowerCase()}`}
                 >
                   {item.name}
@@ -186,7 +186,7 @@ export default function Navbar({ activeSection }: NavbarProps) {
               </motion.a>
             </div>
 
-            <div className="mt-auto text-center text-[#8A8A8A] text-xs font-mono">
+            <div className="mt-auto text-center text-[#6B6B6B] text-xs font-mono">
               Designed by {PORTFOLIO_OWNER.name} • 2026
             </div>
           </motion.div>

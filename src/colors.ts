@@ -10,9 +10,9 @@ export const COLORS = {
   
   // Text
   text: {
-    dark: '#2D2D2D',
-    medium: '#5A5A5A',
-    light: '#8A8A8A',
+    dark: '#1A1A1A',
+    medium: '#3D3D3D',
+    light: '#6B6B6B',
   },
   
   // Accents - Mauve/Rose
@@ -40,9 +40,9 @@ export const BG_CLASSES = {
 };
 
 export const TEXT_CLASSES = {
-  dark: 'text-[#2D2D2D]',
-  medium: 'text-[#5A5A5A]',
-  light: 'text-[#8A8A8A]',
+  dark: 'text-[#1A1A1A]',
+  medium: 'text-[#3D3D3D]',
+  light: 'text-[#6B6B6B]',
 };
 
 export const ACCENT_CLASSES = {

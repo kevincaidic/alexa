@@ -104,11 +104,11 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="text-display text-4xl sm:text-6xl md:text-[82px] uppercase tracking-tighter leading-[0.90] mb-8 text-[#2D2D2D] flex flex-col gap-1 sm:gap-2"
+            className="text-display text-4xl sm:text-6xl md:text-[82px] uppercase tracking-tighter leading-[0.90] mb-8 text-[#1A1A1A] flex flex-col gap-1 sm:gap-2"
             id="hero-core-headline"
           >
             <span>Designing</span>
-            <span className="text-transparent" style={{ WebkitTextStroke: "1.5px rgba(45, 45, 45, 0.3)" }}>Experiences</span>
+            <span className="text-transparent" style={{ WebkitTextStroke: "1.5px rgba(26, 26, 26, 0.25)" }}>Experiences</span>
             <span>That Feel</span>
             <span className="font-light italic text-transparent bg-clip-text bg-gradient-to-r from-[#B47B84] via-[#C98B95] to-[#E89F9C] select-none pb-2">Effortless.</span>
           </motion.h1>
@@ -118,10 +118,10 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="text-[#5A5A5A] md:text-lg max-w-xl mb-10 font-sans font-light leading-relaxed"
+            className="text-[#3D3D3D] md:text-lg max-w-xl mb-10 font-sans font-light leading-relaxed"
             id="hero-desc-para"
           >
-            Hi, I'm <span className="text-[#2D2D2D] font-medium">Methushiela Alexa</span>. I am a graduating BSIT student passionate about system development, UI design, and technology-driven solutions. I enjoy transforming ideas into functional applications while continuously learning and growing in the field of information technology.  
+            Hi, I'm <span className="text-[#1A1A1A] font-medium">Methushiela Alexa</span>. I am a graduating BSIT student passionate about system development, UI design, and technology-driven solutions. I enjoy transforming ideas into functional applications while continuously learning and growing in the field of information technology.  
           </motion.p>
 
           {/* Interactive Magnetic Trigger Buttons */}
@@ -149,7 +149,7 @@ export default function HeroSection() {
                 e.preventDefault();
                 document.querySelector("#recognitions")?.scrollIntoView({ behavior: "smooth" });
               }}
-              className="px-6 py-4 border border-[#B47B84]/30 hover:border-[#B47B84] text-[#5A5A5A] hover:text-[#2D2D2D] rounded-full text-xs font-display uppercase tracking-widest transition-all duration-300 backdrop-blur-sm"
+              className="px-6 py-4 border border-[#B47B84]/30 hover:border-[#B47B84] text-[#3D3D3D] hover:text-[#1A1A1A] rounded-full text-xs font-display uppercase tracking-widest transition-all duration-300 backdrop-blur-sm"
               id="hero-btn-contact"
             >
               Collaborate
@@ -161,20 +161,20 @@ export default function HeroSection() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6 }}
-            className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-lg border-t border-[#B47B84]/10 pt-8 text-[11px] font-mono text-[#8A8A8A]"
+            className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-lg border-t border-[#B47B84]/10 pt-8 text-[11px] font-mono text-[#6B6B6B]"
             id="hero-metadata"
           >
             <div>
               <p className="text-[#B47B84] uppercase tracking-wider text-[9px] mb-1">LOCAL TIME</p>
-              <p className="text-[#5A5A5A] font-medium">GMT+8 (Asia/Manila)</p>
+              <p className="text-[#3D3D3D] font-medium">GMT+8 (Asia/Manila)</p>
             </div>
             <div>
               <p className="text-[#C98B95] uppercase tracking-wider text-[9px] mb-1">DESIGN CORE</p>
-              <p className="text-[#5A5A5A] font-medium">Bento Grids & Motion</p>
+              <p className="text-[#3D3D3D] font-medium">Bento Grids & Motion</p>
             </div>
             <div>
               <p className="text-[#E89F9C] uppercase tracking-wider text-[9px] mb-1">AVAILABILITY</p>
-              <p className="text-[#5A5A5A] font-medium flex items-center gap-1">
+              <p className="text-[#3D3D3D] font-medium flex items-center gap-1">
                 <span className="w-2 h-2 rounded-full bg-[#B47B84] inline-block" /> Active Client Mode
               </p>
             </div>
@@ -229,7 +229,7 @@ export default function HeroSection() {
               <span className="font-mono text-[9px] text-[#B47B84] font-semibold tracking-wider">SOMA WAVES</span>
               <Activity className="w-3.5 h-3.5 text-[#B47B84] animate-pulse" />
             </div>
-            <p className="text-[10px] text-[#5A5A5A] font-medium font-display leading-tight mb-2.5">Neuro Breathing Pace</p>
+            <p className="text-[10px] text-[#3D3D3D] font-medium font-display leading-tight mb-2.5">Neuro Breathing Pace</p>
             
             {/* Visual breathing wave loop */}
             <div className="flex items-end justify-center gap-1 h-8 px-1 mb-1 relative overflow-hidden bg-[#B47B84]/10 rounded-lg">
@@ -254,7 +254,7 @@ export default function HeroSection() {
                 className="w-1.5 bg-[#F4B5A8] rounded-full"
               />
             </div>
-            <div className="text-[8px] font-mono text-center text-[#8A8A8A] tracking-widest mt-1">
+            <div className="text-[8px] font-mono text-center text-[#6B6B6B] tracking-widest mt-1">
               BREATH RATE: ACTIVE
             </div>
           </motion.div>
@@ -276,10 +276,10 @@ export default function HeroSection() {
           >
             <div className="flex items-center gap-1.5 mb-2 border-b border-[#B47B84]/10 pb-1.5">
               <Zap className="w-3.5 h-3.5 text-[#B47B84]" />
-              <span className="font-mono text-[9px] text-[#8A8A8A] tracking-wider">TACTILE MODULATOR</span>
+              <span className="font-mono text-[9px] text-[#6B6B6B] tracking-wider">TACTILE MODULATOR</span>
             </div>
             
-            <p className="text-[10px] text-[#5A5A5A] font-display mb-2.5">Flow Spring Tension</p>
+            <p className="text-[10px] text-[#3D3D3D] font-display mb-2.5">Flow Spring Tension</p>
             <input
               type="range"
               min="10"
@@ -288,7 +288,7 @@ export default function HeroSection() {
               onChange={(e) => setSliderVal(parseInt(e.target.value))}
               className="w-full h-1 bg-[#B47B84]/10 accent-[#B47B84] rounded-lg cursor-pointer mb-1.5 appearance-none"
             />
-            <div className="flex justify-between font-mono text-[8px] text-[#8A8A8A]">
+            <div className="flex justify-between font-mono text-[8px] text-[#6B6B6B]">
               <span>{sliderVal}ms easing</span>
               <span className="text-[#B47B84]">CALIBRATED</span>
             </div>
@@ -298,7 +298,7 @@ export default function HeroSection() {
       </div>
 
       {/* Decorative vertical coordinates overlay & floating grid borders */}
-      <div className="absolute left-6 bottom-12 hidden xl:flex flex-col items-center gap-4 text-[10px] font-mono tracking-[0.2em] text-[#8A8A8A] select-none">
+      <div className="absolute left-6 bottom-12 hidden xl:flex flex-col items-center gap-4 text-[10px] font-mono tracking-[0.2em] text-[#6B6B6B] select-none">
         <span className="rotate-90 origin-left translate-x-1 py-4 uppercase">M•A•C STUDIO 2026</span>
         <div className="w-[1px] h-12 bg-[#B47B84]/20" />
       </div>

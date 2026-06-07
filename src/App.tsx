@@ -42,7 +42,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-[#F5EDE4] text-[#2D2D2D] select-none overflow-x-hidden selection:bg-[#B47B84] selection:text-white" id="portfolio-root">
+    <div className="relative min-h-screen bg-[#F5EDE4] text-[#1A1A1A] select-none overflow-x-hidden selection:bg-[#B47B84] selection:text-white" id="portfolio-root">
       
       {/* Sophisticated Light Theme Ambient Elements */}
       <div className="absolute inset-0 noise pointer-events-none z-0"></div>
