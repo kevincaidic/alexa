@@ -42,9 +42,9 @@ export default function App() {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-[#050505] text-[#F5F5F5] select-none overflow-x-hidden selection:bg-accent-teal selection:text-charcoal-pure" id="portfolio-root">
+    <div className="relative min-h-screen bg-[#F5EDE4] text-[#2D2D2D] select-none overflow-x-hidden selection:bg-[#B47B84] selection:text-white" id="portfolio-root">
       
-      {/* Sophisticated Dark Theme Ambient Elements */}
+      {/* Sophisticated Light Theme Ambient Elements */}
       <div className="absolute inset-0 noise pointer-events-none z-0"></div>
       <div className="absolute top-0 left-0 w-[500px] h-[500px] accent-glow-orange blur-[120px] rounded-full pointer-events-none z-0"></div>
       <div className="absolute bottom-20 right-0 w-[600px] h-[600px] accent-glow-blue blur-[150px] rounded-full pointer-events-none z-0"></div>
