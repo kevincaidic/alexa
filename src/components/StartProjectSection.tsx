@@ -225,7 +225,7 @@ export default function StartProjectSection() {
                 type="submit"
                 className="w-full px-8 py-4 bg-[#4A7FDE] hover:bg-[#5A8FEE] text-white font-display uppercase tracking-wider text-sm font-bold rounded-lg transition-all duration-300 flex items-center justify-center gap-2 group"
               >
-                <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform bg-[#B47B84]/10" />
                 DISPATCH PROJECT BRIEF
                 <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
