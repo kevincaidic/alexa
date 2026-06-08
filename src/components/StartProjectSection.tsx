@@ -66,7 +66,7 @@ export default function StartProjectSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="lg:col-span-4 space-y-6"
+            className="lg:col-span-5 space-y-6"
           >
             {/* Email Card */}
             <div className="glass-panel rounded-2xl p-6">
@@ -130,7 +130,7 @@ export default function StartProjectSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="lg:col-span-8"
+            className="lg:col-span-7"
           >
             <form onSubmit={handleSubmit} className="glass-panel rounded-2xl p-8 space-y-6">
               {/* Name and Email Row */}
