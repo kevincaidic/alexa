@@ -6,6 +6,7 @@ import AboutSection from "./components/AboutSection";
 import ExperienceSection from "./components/ExperienceSection";
 import CertificatesSection from "./components/CertificatesSection";
 import RecognitionsSection from "./components/RecognitionsSection";
+import StartProjectSection from "./components/StartProjectSection";
 import Footer from "./components/Footer";
 
 export default function App() {
@@ -20,7 +21,8 @@ export default function App() {
         "about",
         "experience",
         "certificates",
-        "recognitions"
+        "recognitions",
+        "start-project"
       ];
       const scrollPos = window.scrollY + window.innerHeight / 3;
 
@@ -72,6 +74,9 @@ export default function App() {
 
         {/* Recognitions and Achievements */}
         <RecognitionsSection />
+
+        {/* Start a Project Form */}
+        <StartProjectSection />
 
       </main>
 
