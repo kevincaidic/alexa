@@ -10,9 +10,13 @@ export default function StartProjectSection() {
     timeline: "Standard System (1-2 Months)",
     brief: "",
   });
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Show loading state
+    setIsLoading(true);
     
     // Construct mailto link with form data
     const subject = encodeURIComponent(`Project Brief: ${formData.archetype}`);
@@ -24,7 +28,11 @@ export default function StartProjectSection() {
       `Project Brief:\n${formData.brief}`
     );
     
-    window.location.href = `mailto:cagaanan.methushielaalex@dnsc.edu.ph?subject=${subject}&body=${body}`;
+    // Small delay for loading animation
+    setTimeout(() => {
+      window.location.href = `mailto:cagaanan.methushielaalex@dnsc.edu.ph?subject=${subject}&body=${body}`;
+      setIsLoading(false);
+    }, 800);
   };
 
   return (
@@ -223,11 +231,20 @@ export default function StartProjectSection() {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full px-8 py-4 bg-[#4A7FDE] hover:bg-[#5A8FEE] text-white font-display uppercase tracking-wider text-sm font-bold rounded-lg transition-all duration-300 flex items-center justify-center gap-2 group"
+                disabled={isLoading}
+                className="w-full px-8 py-4 bg-[#B47B84] hover:bg-[#C98B95] text-white font-display uppercase tracking-wider text-sm font-bold rounded-lg transition-all duration-300 flex items-center justify-center gap-2 group disabled:opacity-70 disabled:cursor-not-allowed relative overflow-hidden"
               >
-                <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform bg-[#B47B84]/10" />
-                DISPATCH PROJECT BRIEF
-                <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                {isLoading && (
+                  <motion.div
+                    className="absolute inset-0 bg-gradient-to-r from-[#B47B84] via-[#C98B95] to-[#B47B84]"
+                    initial={{ x: "-100%" }}
+                    animate={{ x: "100%" }}
+                    transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
+                  />
+                )}
+                <Send className={`w-4 h-4 transition-transform relative z-10 ${isLoading ? '' : 'group-hover:translate-x-1'}`} />
+                <span className="relative z-10">{isLoading ? 'DISPATCHING...' : 'DISPATCH PROJECT BRIEF'}</span>
+                <Send className={`w-4 h-4 transition-transform relative z-10 ${isLoading ? '' : 'group-hover:translate-x-1'}`} />
               </button>
             </form>
           </motion.div>
