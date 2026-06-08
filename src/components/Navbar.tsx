@@ -43,6 +43,7 @@ export default function Navbar({ activeSection }: NavbarProps) {
     { name: "Experience", href: "#experience" },
     { name: "Certificates", href: "#certificates" },
     { name: "Recognitions", href: "#recognitions" },
+    { name: "Contact", href: "#start-project" },
   ];
 
   const handleScrollTo = (id: string) => {

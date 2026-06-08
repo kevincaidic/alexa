@@ -71,16 +71,17 @@ export default function StartProjectSection() {
             {/* Email Card */}
             <div className="glass-panel rounded-2xl p-6">
               <div className="flex items-start gap-3 mb-4">
-                <div className="p-2 rounded-lg bg-[#B47B84]/10">
+                <div className="p-2 rounded-lg bg-[#B47B84]/10 flex-shrink-0">
                   <Mail className="w-4 h-4 text-[#B47B84]" />
                 </div>
-                <div>
+                <div className="min-w-0 flex-1">
                   <p className="font-mono text-[9px] uppercase tracking-wider text-[#B47B84] mb-1">
                     DIRECT MAILBOX
                   </p>
                   <a
                     href="mailto:cagaanan.methushielaalex@dnsc.edu.ph"
-                    className="text-[#1A1A1A] text-sm font-medium hover:text-[#B47B84] transition-colors break-all"
+                    className="text-[#1A1A1A] text-sm font-medium hover:text-[#B47B84] transition-colors break-words inline-block"
+                    style={{ wordBreak: 'break-word', overflowWrap: 'anywhere' }}
                   >
                     cagaanan.methushielaalex@dnsc.edu.ph
                   </a>
